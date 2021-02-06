@@ -5,52 +5,6 @@ $button-color: white;
 $background-color: rgb(235, 235, 235);
 $border-color: rgb(200, 200, 200);
 
-@media (max-width: 650px) {
-    main {
-        margin-top: 120px;
-
-        img {
-            margin-bottom: 30px;
-            max-width: 200px;
-        }
-        
-        p {
-            margin-top: 16px;
-        }
-    }
-
-    footer {
-        font-size: 13px;
-    }
-
-    #info-bar {
-        justify-content: center;
-    }
-}
-
-@media (min-width: 651px) {
-    main {
-        margin-top: 160px;
-
-        img {
-            margin-bottom: 30px;
-            width: auto;
-        }
-
-        p {
-            margin-top: 26px;
-        }
-    }
-
-    footer {
-        font-size: 16px;   
-    }
-
-    #info-bar {
-        justify-content: space-between;
-    }
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
@@ -59,7 +13,7 @@ body {
     a {
         text-decoration: none;
     }
-
+    
     a:hover {
         text-decoration: underline;
     }
@@ -75,14 +29,14 @@ header {
         padding: 10px;
         color: $h-link-color;
     }
-
+    
     img {
         position: relative;
         float: left;
         margin-top: 26px;
         max-width: 100px;
     }
-
+    
     div {
         width: 100%;
     }
@@ -98,22 +52,22 @@ main {
             max-width: 1400px;
             // justify-content: flex-end;
         }
-
+        
         #labels {
             line-height: 47px;
             min-width: 150px;
         }
-
+        
         #input {
             line-height: 46px;
             width: 70%;
             padding: 0;
             margin-left: 40px;
-
+            
             div {
                 text-align: right;
             }
-
+            
             .advanced-search-bar {
                 width: 100%;
                 max-width: 1200px;
@@ -152,7 +106,7 @@ footer {
     left: 0;
     bottom: 0;
     right: 0;
-
+    
     a {
         color: gray;
         
@@ -186,5 +140,56 @@ footer {
     
     #legal {
         margin-right: 26px;
+    }
+}
+
+@media (max-width: 650px) {
+    main {
+        margin-top: 120px;
+        
+        img {
+            margin-bottom: 30px;
+            max-width: 200px;
+        }
+        
+        p {
+            margin-top: 16px;
+        }
+        
+        #input {
+            margin-left: 18px;
+        }
+    }
+    
+    footer {
+        font-size: 13px;
+    }
+    
+    #info-bar {
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 651px) {
+    main {
+        margin-top: 160px;
+        
+        img {
+            margin-bottom: 30px;
+            width: auto;
+        }
+        
+        p {
+            margin-top: 26px;
+        }
+    }
+    
+    footer {
+        font-size: 16px;   
+    }
+    
+    #info-bar {
+        justify-content: space-between;
     }
 }
